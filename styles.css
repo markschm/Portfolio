@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0px;
-    background-image: url("assets/placeholder.png");
+    background-image: url("assets/guelph_home.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -52,13 +52,13 @@ hr {
 #navbar {
     height: 70px;
     width: 100%;
-    background-color: rgb(0, 234, 255);
+    background: linear-gradient(to right, rgba(45, 166, 227, 1), rgba(150, 200, 235, 0.85), rgba(255, 255, 255, 0.7));
 
     display: block;
     font-size: 20px;
     position: fixed;
     top: 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #2DA6E3;
 }
 
 #scroll-up {
@@ -76,17 +76,23 @@ hr {
 
 #page-links a {
     padding: 22px 0px 10px;
+    color: #2DA6E3;
 }
 
 
 /* Home */
 #home {
-    height: 100vh;
+    height: 80vh;
     text-align: center;
 }
 
 #home > h1 {
     margin-top: 25%;
+    color: #2DA6E3;
+}
+
+#home > h2 {
+    color: #FFFFF8;
 }
 
 
@@ -118,13 +124,30 @@ hr {
 }
 
 #about hr {
-    background-color: aqua;
+    background-color: #2DA6E3;
+}
+
+#about h2 {
+    color: #2DA6E3;
+}
+
+#edu-image {
+    width: 150px;
+    height: 150px;
 }
 
 
 /* Projects */
 #projects {
-    background-color: orange;
+    padding-bottom: 30px;
+}
+
+#projects {
+    background-color: #8AD0F2;
+}
+
+#projects h2 {
+    color: #FFFFF8;
 }
 
 #projects img {
@@ -145,7 +168,16 @@ hr {
 }
 
 .project:hover {
-    background-color: rgb(200, 145, 0);
+    background-color: #2DA6E3;
+    color: #FFFFF8;
+}
+
+.proj-image {
+    border-radius: 20px;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 
