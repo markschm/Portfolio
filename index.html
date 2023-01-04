@@ -14,6 +14,8 @@
         <a href="#footer">Contact</a>
     </div>
 
+    <!-- have a background image for home screen that stays
+    and you scroll over it with the rest of the page-->
     <div id="home">
         <h1>Mark Schmid</h1>
         <h2>University of Guelph, Computer Science</h2>
@@ -22,16 +24,100 @@
     <div id="about">
         <h2>About</h2>
 
-        <!-- about me, education, languages -->
+        <!-- about me, education, languages 
+        use flexbox for this and have 3 boxes in a horizontal row-->
+        <div id="about-container">
+            <div id="about-child">
+                <h2>About Me</h2>
+                <p>
+                    My name is Mark and I'm a computer science student at
+                    The University of Guelph. In my studies, I have developed a solid foundation in programming 
+                    languages such as C and Java, and have also taught myself Python, Javascript and other
+                    programing languages in my free time. As I pursue my degree, I'm excited to further my education and 
+                    continue to devlop as a programmer.
+                </p>
+            </div>
+            <div id="about-child">
+                <h2>Education</h2>
+                <p>
+                    University of Guelph<br>
+                    Computer Science (Co-op)<br>
+                    Minor in Marketing
+                </p>
+            </div>
+            <div id="about-child">
+                <h2>Languages</h2>
+
+                <ul>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div id="projects">
         <h2>Projects</h2>
 
-        <!-- image & description beside eachother, link to code somewhere too -->
+        <!-- image & description beside eachother, link to code somewhere too 
+        add a button that'll link to my github code
+        have little button looking things that say technologies used for project like languages -->
+
+        <div class="project">
+            <img class="proj-image" src="assets/placeholder.png"/>
+
+            <div class="proj-info">
+                <h2>Stonk Bot | Hackathon | 2022</h2>
+
+                <p>
+                    A stock trading simulator in Discord using Python, Discord API, and Financial Modeling Prep API.
+                    Users could manage their virtual portfolios, buy and sell shares using real-time stock prices, and
+                    view their ranking on a server-wide leaderboard.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img class="proj-image" src="assets/placeholder.png"/>
+
+            <div class="proj-info">
+                <h2>Personal Portfolio Builder | Hackathon | 2022</h2>
+
+                <p>
+                    Personal portfolio builder, to help computer science students without web design skills
+                    create professional-looking personal websites to showcase their skills and experience to 
+                    potential employers. The program used HTML, CSS and PHP and included a range of prebuilt templates
+                    that users could choose from and customize with their own information. Upon completion, users were provided with
+                    the HTML and CSS files for their chosen template, with their personal data already inserted.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img class="proj-image" src="assets/placeholder.png"/>
+
+            <div class="proj-info">
+                <h2>MLB Data Explorer | 2023</h2>
+
+                <p>
+                    For this project, I plan to create a program that allows users to explore and analyze various baseball
+                    statistics. The program will include a database of baseball statistics that is stored using SQLite, as well
+                    as a user interface that will allow users to query the database to retrieve statistics on specific teams and players.
+                    Additionally, I will add a way for users to plot and visualize particular statistics from the data set.
+                </p>
+            </div>
+        </div>
     </div>
 
     <div id="footer">
+        <!-- images for social links, github, linkedin maybe others-->
+        <a href=""><img class="footer-image" src="assets/placeholder.png"/></a>
+        <a href=""><img class="footer-image" src="assets/placeholder.png"/></a>
+
         <p>Mark Schmid</p>
         <p>2023</p>
     </div>
