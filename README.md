@@ -1,6 +1,5 @@
 # Personal Portfolio Website
 
 ## todo
-- setup html with text
-- add css
+- add images and fonts
 - make site responsive

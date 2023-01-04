@@ -9,27 +9,32 @@
 </head>
 <body>
     <div id="navbar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#footer">Contact</a>
+        <a href="#"><img id="scroll-up" src="assets/placeholder.png"/></a>
+
+        <div id="page-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact</a>
+        </div>
     </div>
 
-    <!-- have a background image for home screen that stays
-    and you scroll over it with the rest of the page-->
     <div id="home">
         <h1>Mark Schmid</h1>
         <h2>University of Guelph, Computer Science</h2>
     </div>
 
     <div id="main">
-        <div id="about">
-            <h2 class="section-title">About</h2>
+        <div id="about" class="section">
+            <div class="section-header">
+                <h2>About</h2>
+                <hr>
+            </div>
     
-            <!-- about me, education, languages 
-            use flexbox for this and have 3 boxes in a horizontal row-->
             <div id="about-container">
                 <div class="about-child">
                     <h2>About Me</h2>
+                    <hr>
+
                     <p>
                         My name is Mark and I'm a computer science student at
                         The University of Guelph. In my studies, I have developed a solid foundation in programming 
@@ -40,6 +45,9 @@
                 </div>
                 <div class="about-child">
                     <h2>Education</h2>
+                    <hr>
+
+
                     <p>
                         University of Guelph<br>
                         Computer Science (Co-op)<br>
@@ -48,8 +56,8 @@
                 </div>
                 <div class="about-child">
                     <h2>Languages</h2>
+                    <hr>
     
-                    <!-- consider adding little image beside language -->
                     <ul>
                         <li>C</li>
                         <li>Python</li>
@@ -62,8 +70,11 @@
             </div>
         </div>
     
-        <div id="projects">
-            <h2 class="section-title">Projects</h2>
+        <div id="projects" class="section">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <hr>
+            </div>
     
             <!-- image & description beside eachother, link to code somewhere too 
             add a button that'll link to my github code
