@@ -117,7 +117,7 @@ p {
     max-width: 350px; 
     flex: 1;
     text-align: center;
-    border: 7px solid black;
+    border: 1px solid black;
     border-radius: 25px;
     padding: 20px 5px;
     height: inherit;
@@ -163,9 +163,11 @@ p {
     color: #FFFFF8;
 }
 
-#projects img {
+.project img {
     width: 300px;
     height: 300px;
+    border: 5px solid #2DA6E3;
+    border-radius: 20px;
 }
 
 #projects hr {
@@ -186,8 +188,20 @@ p {
     color: #FFFFF8;
 }
 
+.project:hover > .proj-image {
+    border-color: #8AD0F2;
+    background-color: #8AD0F2;
+}
+
+.project:hover > .proj-image > img {
+    border-color: #8AD0F2;
+}
+
 .proj-image {
     border-radius: 20px;
+    background-color: #2DA6E3;
+    border: 5px solid #2DA6E3;
+    height: 310px;
 }
 
 .project:nth-child(even) {
