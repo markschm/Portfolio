@@ -1,9 +1,9 @@
-/* add some animation to the navbar selectors */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=IBM+Plex+Mono&family=Kanit&family=Noto+Sans:wght@200&display=swap');
 
 html {
     padding: 0px;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,10 +17,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
-
-ul {
-    list-style: none;
 }
 
 #main {
@@ -80,9 +76,10 @@ p {
 }
 
 #page-links a {
-    padding: 22px 0px 10px;
+    padding: 19px 0px 10px;
     color: #2DA6E3;
     font-weight: 700;
+    font-size: 24px;
 }
 
 
@@ -92,6 +89,7 @@ p {
     text-align: center;
     font-family: 'Catamaran', sans-serif;
     line-height: 3px;
+    text-shadow: 0px 0px 10px #000;
 }
 
 #home > h1 {
@@ -122,6 +120,12 @@ p {
     border: 7px solid black;
     border-radius: 25px;
     padding: 20px 5px;
+    height: inherit;
+}
+
+#languages p {
+    line-height: 0px;
+    margin: 0;
 }
 
 .about-child p {
@@ -174,6 +178,7 @@ p {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    max-width: 1400px;
 }
 
 .project:hover {
@@ -187,6 +192,31 @@ p {
 
 .project:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+.project a {
+    color: #FFFFF8;
+    border: 2px solid #FFFFF8;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    background: linear-gradient(to left, #2DA6E3 50%, #8AD0F2 50%) right;
+    background-size: 200%;
+    transition: 1s ease;
+}
+
+.project a:hover {
+    background-position: left;
+}
+
+.tech-box {
+    background-color: #666;
+    border: 2px solid #FFFFF8;
+    color: #FFFFF8;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 

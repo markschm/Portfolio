@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Schmid</title>
+    <link rel="icon" href="assets/logos/MS.png"/>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -24,7 +25,7 @@
     </div>
 
     <div id="main">
-        <div id="about" class="section">
+        <div id="about">
             <div class="section-header">
                 <h2>About</h2>
                 <hr>
@@ -58,28 +59,24 @@
                 <div class="about-child">
                     <h2>Languages</h2>
                     <hr>
-    
-                    <ul>
-                        <li>C</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>Javascript</li>
-                        <li>HTML/CSS</li>
-                        <li>SQL</li>
-                    </ul>
+                    
+                    <div id="languages">
+                        <p>C</p>
+                        <p>Python</p>
+                        <p>Java</p>
+                        <p>Javascript</p>
+                        <p>HTML/CSS</p>
+                        <p>SQL</p>
+                    </div>
                 </div>
             </div>
         </div>
     
-        <div id="projects" class="section">
+        <div id="projects">
             <div class="section-header">
                 <h2>Projects</h2>
                 <hr>
             </div>
-    
-            <!-- image & description beside eachother, link to code somewhere too 
-            add a button that'll link to my github code
-            have little button looking things that say technologies used for project like languages -->
     
             <div class="project">
                 <img class="proj-image" src="assets/projects/sell_command_stonk_bot.png"/>
@@ -88,11 +85,15 @@
                 <div class="proj-info">
                     <h2>Stonk Bot | Hackathon | 2022</h2>
     
+                    <span class="tech-box">Python</span>
+                    <span class="tech-box">Discord API</span>
+
                     <p>
                         A stock trading simulator in Discord using Python, Discord API, and Financial Modeling Prep API.
                         Users could manage their virtual portfolios, buy and sell shares using real-time stock prices, and
                         view their ranking on a server-wide leaderboard.
                     </p>
+                    <a href="https://github.com/aidanbruneel/StonkBot" target="_blank">View Code</a>
                 </div>
             </div>
     
@@ -103,6 +104,11 @@
                 <div class="proj-info">
                     <h2>Personal Portfolio Builder | Hackathon | 2022</h2>
     
+                    <span class="tech-box">HTML</span>
+                    <span class="tech-box">CSS</span>
+                    <span class="tech-box">PHP</span>
+
+
                     <p>
                         Personal portfolio builder, to help computer science students without web design skills
                         create professional-looking personal websites to showcase their skills and experience to 
@@ -110,6 +116,7 @@
                         that users could choose from and customize with their own information. Upon completion, users were provided with
                         the HTML and CSS files for their chosen template, with their personal data already inserted.
                     </p>
+                    <a href="https://github.com/JoffduPreez/BCOMP-Hackathon" target="_blank">View Code</a>
                 </div>
             </div>
     
@@ -118,7 +125,10 @@
     
                 <div class="proj-info">
                     <h2>MLB Data Explorer | 2023</h2>
-    
+                    
+                    <span class="tech-box">Java</span>
+                    <span class="tech-box">SQL</span>
+
                     <p>
                         For this project, I plan to create a program that allows users to explore and analyze various baseball
                         statistics. The program will include a database of baseball statistics that is stored using SQLite, as well
@@ -130,19 +140,12 @@
         </div>
     
         <div id="footer">
-            <!-- images for social links, github, linkedin maybe others-->
-            <a href="https://github.com/markschm"><img class="footer-image" src="assets/logos/github.png"/></a>
-            <a href="https://www.linkedin.com/in/markschmid94/"><img class="footer-image" src="assets/logos/linkedin.png"/></a>
+            <a href="https://github.com/markschm" target="_blank"><img class="footer-image" src="assets/logos/github.png"/></a>
+            <a href="https://www.linkedin.com/in/markschmid94/" target="_blank"><img class="footer-image" src="assets/logos/linkedin.png"/></a>
     
             <p>Mark Schmid</p>
             <p>2023</p>
         </div>
     </div>
-    <!--
-        To Add:
-        + google fonts
-        + image screen reader things
-        + test out spacing on bigger screen
-    -->
 </body>
 </html>
