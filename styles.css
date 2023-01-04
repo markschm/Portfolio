@@ -1,7 +1,5 @@
-/*
-    background image of guelph
-    add some animation to the navbar selectors 
-*/
+/* add some animation to the navbar selectors */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=IBM+Plex+Mono&family=Kanit&family=Noto+Sans:wght@200&display=swap');
 
 html {
     padding: 0px;
@@ -46,6 +44,12 @@ hr {
     scroll-margin-top: 70px;
 }
 
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000
+}
 
 
 /* Navbar */
@@ -59,6 +63,7 @@ hr {
     position: fixed;
     top: 0px;
     border-bottom: 2px solid #2DA6E3;
+    font-family: 'Kanit', sans-serif;
 }
 
 #scroll-up {
@@ -77,6 +82,7 @@ hr {
 #page-links a {
     padding: 22px 0px 10px;
     color: #2DA6E3;
+    font-weight: 700;
 }
 
 
@@ -84,10 +90,13 @@ hr {
 #home {
     height: 80vh;
     text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 3px;
 }
 
 #home > h1 {
     margin-top: 25%;
+    font-size: 58px;
     color: #2DA6E3;
 }
 
