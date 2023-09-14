@@ -26,3 +26,30 @@ body {
     width: 400px;
     height: 300px;
 }
+
+.experience-section {
+    padding: 20px;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+}
+
+.role-container {
+    width: 60%;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
+
+.role-container > li {
+    padding: 5px 0;
+}
+
+.goal {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+}
